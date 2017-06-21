@@ -1,0 +1,50 @@
+title: Page
+pages: true
+files: true
+fields:
+
+  title:
+    label: Title
+    type:  text
+
+  table:
+    label: Add a table-cell
+    type: snippetfield
+    style: items
+    snippet: panel/table
+    modalsize: large
+    fields:
+
+      cell_total:
+        label: Cell - Total
+        type: number
+        icon: calculator
+        required: true
+        width: 1/4
+        help: max. cell on every row
+
+      cell_span:
+        label: Cell - Colspan
+        type: number
+        icon: calculator
+        required: true
+        width: 1/4
+        help: nr. of colls to span
+
+      cell_id:
+        label: "Cell - #ID"
+        type: text
+        icon: hashtag
+        width: 1/4
+        help: "this cell's unique #id"
+
+      cell_class:
+        label: Cell - Class
+        type: text
+        icon: code
+        width: 1/4
+        help: this cell's classname
+
+      cell_content:
+        label: Cell - Content
+        type: textarea
